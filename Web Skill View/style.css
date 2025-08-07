@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  /* 제목과 박스들을 세로로 배치 */
+    align-items: center;
+    transition: background-color 0.5s ease;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white; /* 초기 배경색 */
+}
+.title-box {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    user-select: none;
+    cursor: pointer;
+}
+.box-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+}
+.color-box {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.color-box:hover {
+    transform: scale(1.1);
+}
